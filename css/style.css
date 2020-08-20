@@ -1,8 +1,9 @@
 @charset "utf-8";
 /* CSS Document */
 body{
-	margin:0px;
+	margin-top:60px;
 	padding:100px;
+	
 }
 ul{
 	list-style:none;
@@ -12,7 +13,7 @@ a{
 }
 .container{
 	width:100%;
-	height: 65vh;
+	height: 55vh;
 	background-color:#a4152c;
 	display:flex;
 	justify-content: center;
