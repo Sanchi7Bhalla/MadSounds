@@ -3,7 +3,6 @@ console.log(divlength);
 
 for(var i=0; i<divlength; i++) {
  var demo = document.querySelectorAll('.song')[i].addEventListener('click',playsong);
- var demo = document.querySelectorAll('.song')[i].addEventListener('dblclick',pausesong);
 }
 
 var song1 = new Audio();
@@ -30,27 +29,77 @@ function playsong()
  console.log(songId); 
  switch (songId) {
   case "FEARLESS":
-   song1.play();
+   if(song1.paused)
+      {song1.play();
+        song2.pause();
+        song3.pause();
+        song4.pause();
+        song5.pause();
+        song6.pause();
+      }
+      else
+      song1.pause();
+         
    break;
 
   case "SPEAK NOW":
-   song2.play();
+    if(song2.paused)
+    {song2.play();
+      song1.pause();
+      song3.pause();
+      song4.pause();
+      song5.pause();
+      song6.pause();}
+    else
+    song2.pause();
    break;
 
   case "RED":
-   song3.play();
+    if(song3.paused)
+    {song3.play();
+      song2.pause();
+      song1.pause();
+      song4.pause();
+      song5.pause();
+      song6.pause();}
+    else
+    song3.pause();
    break;
 
   case "1989":
-   song4.play();
+    if(song4.paused)
+    {song4.play();
+      song2.pause();
+      song3.pause();
+      song1.pause();
+      song5.pause();
+      song6.pause();}
+    else
+    song4.pause();
    break;
 
   case "REPUTATION":
-   song5.play();
+    if(song5.paused)
+    {song5.play();
+      song2.pause();
+      song3.pause();
+      song4.pause();
+      song1.pause();
+      song6.pause();}
+    else
+    song5.pause();
    break;
 
   case "LOVER":
-   song6.play();
+    if(song6.paused)
+    {song6.play();
+      song2.pause();
+      song3.pause();
+      song4.pause();
+      song5.pause();
+      song1.pause();}
+    else
+    song6.pause();
    break;
 
   default:
